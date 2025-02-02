@@ -1,8 +1,8 @@
 const greetings = {
-    morning: "Bonjour! Que Dieu vous bénisse ce matin.",
-    afternoon: "Bon après-midi! Que la paix de Dieu soit avec vous.",
-    evening: "Bonsoir! Que Dieu vous garde ce soir.",
-    night: "Bonne nuit! Que Dieu vous protège pendant votre sommeil."
+    morning: "Bonjour! Que Dieu te bénisse ce matin.",
+    afternoon: "Bon après-midi! Que la paix de Dieu soit avec toi.",
+    evening: "Bonsoir! Que Dieu te garde ce soir.",
+    night: "Bonne nuit! Que Dieu te protège pendant votre sommeil."
 };
 
 // Fonction pour récupérer un verset aléatoire via l'API Bible
