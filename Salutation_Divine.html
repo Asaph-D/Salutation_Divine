@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salutation Divine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="greeting"></h1>
+        <em id="verse" class="verse-container"></em>
+        <div class="social-share">
+            <button onclick="toggleShareOptions()" id="shareFriendButton">🤗 je partage avec mon ami</button>
+            <button onclick="shareSite()"><i class="fas fa-share-alt"></i></button>
+            <div id="shareOptions" class="share-options">
+                <button onclick="shareOnFacebook()"><i class="fab fa-facebook-f"></i> Facebook</button>
+                <button onclick="shareOnTwitter()"><i class="fab fa-twitter"></i> Twitter</button>
+                <button onclick="shareOnWhatsApp()"><i class="fab fa-whatsapp"></i> WhatsApp</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

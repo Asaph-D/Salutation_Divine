@@ -1,0 +1,84 @@
+body {
+    font-family: 'Arial', sans-serif; /* Définit la police de caractères pour le corps du document */
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Applique un dégradé linéaire en arrière-plan */
+    color: white; /* Définit la couleur du texte en blanc */
+    display: flex; /* Utilise Flexbox pour le layout */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+    height: 100vh; /* Définit la hauteur du corps à 100% de la hauteur de la fenêtre */
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+.container {
+    text-align: center; /* Centre le texte à l'intérieur du conteneur */
+    background: rgba(255, 255, 255, 0.1); /* Applique un fond semi-transparent blanc */
+    padding: 2rem; /* Ajoute un padding autour du conteneur */
+    border-radius: 15px; /* Arrondit les coins du conteneur */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Ajoute une ombre portée au conteneur */
+    backdrop-filter: blur(10px); /* Applique un flou de fond au conteneur */
+}
+
+h1 {
+    font-size: 2.5rem; /* Définit la taille de la police pour les titres */
+    margin-bottom: 1rem; /* Ajoute une marge en bas des titres */
+    transition: margin 1s ease-in-out, opacity 1s ease-in-out; /* Ajoute une transition pour la marge et l'opacité */
+}
+
+#verse {
+    color: #c6c6c6; /* Définit la couleur du texte pour le verset */
+    transition: opacity 2s ease-in-out; /* Ajoute une transition pour l'opacité */
+}
+
+.verse-container {
+    opacity: 0; /* Définit l'opacité initiale à 0 */
+    transition: opacity 1s ease-in-out; /* Ajoute une transition pour l'opacité */
+}
+
+.verse-container.visible {
+    opacity: 1; /* Définit l'opacité à 1 lorsque l'élément est visible */
+}
+
+#shareOptions {
+    transition: opacity 1s ease-in-out, max-height 1s ease-in-out; /* Ajoute une transition pour l'opacité et la hauteur maximale */
+    max-height: 0; /* Définit la hauteur maximale initiale à 0 */
+    /* overflow: hidden; Masque le contenu débordant */
+}
+
+.share-options {
+    opacity: 0; /* Définit l'opacité initiale à 0 */
+    /* margin-top: 10px; Ajoute une marge en haut des options de partage */
+}
+
+.share-options.visible {
+    opacity: 1; /* Définit l'opacité à 1 lorsque l'élément est visible */
+    max-height: 100px; /* Ajustez cette valeur en fonction du contenu */
+}
+
+.share-options button {
+    display: inline-block; /* Affiche les boutons en ligne */
+    align-items: center; /* Centre les éléments à l'intérieur des boutons */
+    margin: 5px 0; /* Ajoute une marge autour des boutons */
+}
+
+.share-options button i {
+    margin-right: 10px; /* Ajoute une marge à droite des icônes à l'intérieur des boutons */
+}
+
+.social-share {
+    transition: margin 1s ease-in-out, opacity 1s ease-in-out; /* Ajoute une transition pour la marge et l'opacité */
+}
+
+.social-share button {
+    background: #2575fc; /* Définit la couleur de fond des boutons */
+    border: none; /* Supprime les bordures des boutons */
+    color: white; /* Définit la couleur du texte des boutons en blanc */
+    padding: 0.5rem 1rem; /* Ajoute un padding à l'intérieur des boutons */
+    margin: 0.5rem; /* Ajoute une marge autour des boutons */
+    border-radius: 5px; /* Arrondit les coins des boutons */
+    cursor: pointer; /* Change le curseur en pointeur lors du survol des boutons */
+    transition: background 0.3s ease; /* Ajoute une transition pour la couleur de fond */
+}
+
+.social-share button:hover {
+    background: #6a11cb; /* Change la couleur de fond des boutons lors du survol */
+}
