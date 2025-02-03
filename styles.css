@@ -7,6 +7,7 @@ body {
     align-items: center; /* Centre le contenu verticalement */
     height: 100vh; /* Définit la hauteur du corps à 100% de la hauteur de la fenêtre */
     margin: 0; /* Supprime les marges par défaut */
+    transition: background 0.5s ease;
 }
 
 .container {
@@ -16,6 +17,8 @@ body {
     border-radius: 15px; /* Arrondit les coins du conteneur */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Ajoute une ombre portée au conteneur */
     backdrop-filter: blur(10px); /* Applique un flou de fond au conteneur */
+    max-width: 90%;
+    width: 500px;
 }
 
 h1 {
@@ -76,9 +79,18 @@ h1 {
     margin: 0.5rem; /* Ajoute une marge autour des boutons */
     border-radius: 5px; /* Arrondit les coins des boutons */
     cursor: pointer; /* Change le curseur en pointeur lors du survol des boutons */
-    transition: background 0.3s ease; /* Ajoute une transition pour la couleur de fond */
+    transition: transform 0.2s ease, background 0.3s ease;
 }
 
 .social-share button:hover {
     background: #6a11cb; /* Change la couleur de fond des boutons lors du survol */
+    transform: scale(1.05);
+}
+/* -------------------------------------------- */
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+        width: 95%;
+    }
 }
